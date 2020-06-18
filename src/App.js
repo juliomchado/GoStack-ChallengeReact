@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     api.get('repositories')
       .then(repo => setRepositories(repo.data))
-  })
+  }, [])
 
 
   async function handleAddRepository() {
